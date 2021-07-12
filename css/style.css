@@ -9,7 +9,7 @@ body{ font-family: sans-serif;  background: linear-gradient(#0005, #0005),url('.
 .box{
     overflow: hidden;
     box-shadow: -10px 10px 40px rgba(0,0,0,0.25);
-    height:310px;
+    height:300px;
     width: 90%;
     max-width: 700px;
     position: relative;
@@ -19,9 +19,9 @@ body{ font-family: sans-serif;  background: linear-gradient(#0005, #0005),url('.
 }
 .view{
     position:relative;
-    color:rgb(42, 40, 212);
+    color:#000;
     background-color:#fff;
-    height:310px;
+    height:300px;
     padding:40px;
     line-height:22px;
     z-index: 1;
@@ -37,7 +37,7 @@ body{ font-family: sans-serif;  background: linear-gradient(#0005, #0005),url('.
     margin-right:20px;
 }
 .title h3{
-    color: #00f;
+    color: #444;
     margin-bottom:10px;
     font-size: 25px;
 }
@@ -55,7 +55,7 @@ body{ font-family: sans-serif;  background: linear-gradient(#0005, #0005),url('.
   justify-content: space-between;
   align-items: center;
   height:100%;
-  background-color:#000 ;
+  background-color:#444 ;
   position: absolute;
   right:0;
   top:0;
@@ -71,20 +71,22 @@ body{ font-family: sans-serif;  background: linear-gradient(#0005, #0005),url('.
     border-radius: 50%;
     cursor: pointer;
 }
+/* HERE You was forget the Width */
 .view::before{
     content: "";
     height:110px;
+    width: 110px;
     border-bottom-right-radius:100%;
     position: absolute;
     top:0;
     left:0;
-    background-color: #f00;
+    background-color: #444;
     top: 0;
     left:0;
     z-index:-1;
 
 }
 ::selection{
-background-color: #000;
+background-color: #777;
 color:#fff
 }
